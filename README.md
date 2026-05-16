@@ -221,23 +221,23 @@ PESiMENs uses a monorepo with a React frontend, a Fastify backend API, and a Pyt
 
 ```mermaid
 flowchart LR
-  subgraph Client
-    FE[React Frontend (PWA)]
+  subgraph Client["Client"]
+    FE["React Frontend (PWA)"]
   end
 
-  subgraph Backend
-    API[Fastify API]
+  subgraph Backend["Backend"]
+    API["Fastify API"]
   end
 
-  subgraph Data
-    DB[(Supabase PostgreSQL)]
+  subgraph Data["Data"]
+    DB[("Supabase PostgreSQL")]
   end
 
-  subgraph External Services
-    Gemini[Gemini AI]
-    Razorpay[Razorpay]
-    OneSignal[OneSignal]
-    Adzuna[Adzuna]
+  subgraph ExternalServices["External Services"]
+    Gemini["Gemini AI"]
+    Razorpay["Razorpay"]
+    OneSignal["OneSignal"]
+    Adzuna["Adzuna"]
   end
 
   FE -->|HTTPS REST| API
