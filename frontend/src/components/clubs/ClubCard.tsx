@@ -41,7 +41,7 @@ export function ClubCard({ club, compact = false }: ClubCardProps) {
         /* Cover */
         <div className="h-24 bg-gradient-to-br from-indigo-900/40 to-purple-900/30 relative">
           {club.cover_image_url && (
-            <img src={club.cover_image_url} alt={getClubImageAlt(club.name)} loading="lazy" className="w-full h-full object-cover" />
+            <img src={club.cover_image_url} alt={getClubImageAlt(club.name, club.cover_image_alt)} loading="lazy" className="w-full h-full object-cover" />
           )}
           {/* Logo */}
           <div className="absolute -bottom-5 left-4 h-12 w-12 rounded-xl border-2 border-white dark:border-gray-800 bg-[#1a1a1a] dark:bg-gray-700 overflow-hidden shadow-none">
