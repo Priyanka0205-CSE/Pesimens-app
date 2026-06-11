@@ -17,11 +17,10 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            const HACKTOBERFEST_MONTH = 9; // October (zero-indexed)
+            const HACKTOBERFEST_MONTH = 9; // Jan=0 ... Oct=9
             const pr = context.payload.pull_request;
             const text = `${pr.title}\n${pr.body || ''}`;
-            const issueNumbers = [...new Set([...text.matchAll(/#(\d+)/g)].map((match) => Number(match[1])))]
-              .filter((number) => Number.isInteger(number));
+            const issueNumbers = [...new Set([...text.matchAll(/#(\d+)/g)].map((match) => Number(match[1])))];
 
             const excludedPrefixes = ['level:', 'type:', 'quality:', 'gssoc:', 'mentor:'];
             const labelsToAdd = new Set();
