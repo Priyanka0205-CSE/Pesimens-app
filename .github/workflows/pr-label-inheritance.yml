@@ -17,6 +17,7 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
+            const HACKTOBERFEST_MONTH = 9; // October (zero-indexed)
             const pr = context.payload.pull_request;
             const text = `${pr.title}\n${pr.body || ''}`;
             const issueNumbers = [...new Set([...text.matchAll(/#(\d+)/g)].map((match) => Number(match[1])))]
@@ -49,7 +50,7 @@ jobs:
               }
             }
 
-            if (new Date().getUTCMonth() === 9) {
+            if (new Date().getUTCMonth() === HACKTOBERFEST_MONTH) {
               labelsToAdd.add('hacktoberfest-accepted');
             }
 

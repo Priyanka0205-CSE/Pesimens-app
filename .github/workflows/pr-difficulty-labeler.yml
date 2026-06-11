@@ -16,6 +16,12 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
+            const THRESHOLDS = {
+              intermediate: { files: 6, changes: 80 },
+              advanced: { files: 15, changes: 300 },
+              critical: { files: 25, changes: 600 },
+            };
+
             const pr = context.payload.pull_request;
             const files = await github.paginate(github.rest.pulls.listFiles, {
               owner: context.repo.owner,
@@ -31,11 +37,11 @@ jobs:
             );
 
             let targetLabel = 'level:beginner';
-            if (touchedCore && (changeCount > 600 || fileCount > 25)) {
+            if (touchedCore && (changeCount > THRESHOLDS.critical.changes || fileCount > THRESHOLDS.critical.files)) {
               targetLabel = 'level:critical';
-            } else if (changeCount > 300 || fileCount > 15) {
+            } else if (changeCount > THRESHOLDS.advanced.changes || fileCount > THRESHOLDS.advanced.files) {
               targetLabel = 'level:advanced';
-            } else if (changeCount > 80 || fileCount > 6) {
+            } else if (changeCount > THRESHOLDS.intermediate.changes || fileCount > THRESHOLDS.intermediate.files) {
               targetLabel = 'level:intermediate';
             }
 
