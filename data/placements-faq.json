@@ -1,0 +1,57 @@
+{
+  "_comment": "FAQ-style placement insights for PESiMENs, per maintainer feedback: qualitative info on what actually helps students during placements, not just company names and packages. Paraphrased and structured from the PESU community FAQ (HackerSpace-PESU/pesu-for-dummies), which itself compiles real advice from r/PESU threads and alumni. Each entry pairs a question a student would realistically search with a practical, actionable answer.",
+  "_source": "https://github.com/HackerSpace-PESU/pesu-for-dummies (community-maintained, sourced from r/PESU)",
+  "faqs": [
+    {
+      "question": "When should I start preparing for placements?",
+      "answer": "Start well before final year. Many students who placed well began building a foundation (DSA basics, at least one solid project) from their second or third year, then intensified prep 3-6 months before placement season. Waiting until final year to start from scratch puts you at a real disadvantage.",
+      "category": "timeline"
+    },
+    {
+      "question": "Does CGPA actually matter for placements?",
+      "answer": "Yes, but not infinitely. Many companies use CGPA as an initial shortlisting filter, so keeping it reasonably high (especially in your first year, since it's hard to recover from a bad start) keeps more doors open. That said, once you clear the CGPA cutoff for a company, what matters most is your skills and interview performance, not chasing a perfect 10. Don't sacrifice actual skill-building just to grind for marginal CGPA gains.",
+      "category": "academics"
+    },
+    {
+      "question": "What actually helps get shortlisted and selected, beyond CGPA?",
+      "answer": "Having real, explainable projects on your resume matters a lot. Interviewers frequently dig into project details, so 1-2 solid projects you deeply understand outperform a long list of shallow ones. Consistent DSA/problem-solving practice, being comfortable with the fundamentals of your stream (not just memorized theory), and a clean, focused resume all compound together.",
+      "category": "preparation"
+    },
+    {
+      "question": "Should I focus only on CGPA or also build practical skills?",
+      "answer": "Both matter, but practical, industry-relevant skills carry more weight by placement time. A high CGPA without the technical proficiency to back it up in interviews won't get you selected. Treat your degree as a base and spend real time outside the syllabus on skills recruiters actually test for.",
+      "category": "preparation"
+    },
+    {
+      "question": "How important are internships before final placements?",
+      "answer": "Very useful when available. Internships (research or industry) give you real experience to talk about in interviews and sometimes convert directly into full-time offers. If you haven't landed one, personal projects that show similar depth and initiative can partially fill that gap.",
+      "category": "experience"
+    },
+    {
+      "question": "Where can I find placement statistics and past results?",
+      "answer": "The most detailed community-maintained placement statistics compilation is shared periodically on r/PESU — search for the 'Placement Statistics Compilation' thread for the most recent breakdown by company, branch, and package range.",
+      "category": "resources",
+      "source_link": "https://www.reddit.com/r/PESU/comments/1l16bng/placement_statistics_compilation_2022_to_present/"
+    },
+    {
+      "question": "Do RR and EC campus students have different placement chances?",
+      "answer": "No — placements are pooled across both campuses. Companies interview candidates from both RR and EC together and don't distinguish between them. Any perception that one campus does better is mostly a statistics artifact: RR simply has a much larger student body, so more RR students get placed in absolute numbers, not because of any bias.",
+      "category": "general"
+    },
+    {
+      "question": "Is it worth staying connected with seniors and alumni during placement prep?",
+      "answer": "Yes, strongly recommended. Seniors are often the fastest way to learn about upcoming openings, referral opportunities, and realistic interview experiences at specific companies. Most PESU communities (clubs, batch groups) are active on Discord — staying engaged there before placement season starts pays off.",
+      "category": "networking"
+    },
+    {
+      "question": "How should I keep my resume and LinkedIn ready?",
+      "answer": "Keep both updated continuously rather than scrambling right before placements — revisiting your resume every couple of months (or after any major update like a new project or internship) keeps it recruiter-ready and makes applying to sudden openings much less stressful.",
+      "category": "preparation"
+    },
+    {
+      "question": "What's a common mistake students make with placement prep?",
+      "answer": "Starting too late and trying to cram everything (DSA, projects, aptitude, communication skills) into the final few months. Consistent, spread-out effort across semesters beats last-minute intensity — both for retention and for stress levels during an already demanding final year.",
+      "category": "mistakes"
+    }
+  ]
+}
